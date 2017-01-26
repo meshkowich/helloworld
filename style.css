@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #72695d;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+    background-image: url("img/back.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    overflow: hidden;
+    margin: 0px; padding: 0px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+p {
+  line-height: 0.4em;
+}
+
+.navigation {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid black;
+  margin-left: 10%;
+  /*height: auto;*/
+  padding: 5% 5% 0% 5%;
+  text-align: center;
+  position: fixed;
+  /*z-index: 999;*/
+}
+.bottom_bar {
+  background-color: #c3b59b;
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  z-index: 100; 
+  bottom: 0; 
+  left: 0;
+}
