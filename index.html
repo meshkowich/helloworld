@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>EVO 1 task</title>
 <meta charset="UTF-8">
-<!--<meta name="viewport" content="width=device-width, initial-scale=1"> 
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
+
+<!-- Add jQuery library -->
+<script
+  src="http://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<!-- My css -->
 <link href="style.css" type="text/css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
+</head>
 <body>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+
+
   <div class="navigation">
     <div class="logo">
       <img src="img/logo.png">
@@ -16,28 +48,34 @@
       <p>NAMŲ PYNĖS – nauja gyvenvietė sostinėje, Tuskulėnų<br>
       gatvėje, supinta iš septynių daugiabučių, ypatingoje,<br>
       duona kvepiančioje Vilniaus vietoje.</p>
-      130 metų šeimomis besirūpinusi seniausia duonos<br>
+      <p>130 metų šeimomis besirūpinusi seniausia duonos<br>
       kepykla užleidžia vietą naujai, jaukių namų tradicijai.<br>
       Registruokitės ir informaciją apie projekto butus<br>
       gaukite PIRMIEJI!</p>
-    <div>
-      <img src="img/pin.png">
-      <img src="img/key.png">
-    </div>
     <section>
-      <a href="http://files.explosm.net/comics/Rob/addict.png"> vieta mieste</a>
-      <a href="" target=_blank> noriu būti pirmas</a>
+      <ul>
+        <li>
+          <img src="img/pin.png" class="sign">
+          <br>
+          <a class="button fancybox" rel="group" href="http://files.explosm.net/comics/Rob/addict.png">vieta mieste</a>
+        </li>
+        <li>
+          <img src="img/key.png" class="sign">
+          <br>
+          <a class="button fancybox" rel="group" href="img/popup.jpg">noriu būti pirmas</a>
+        </li>
+      </ul>
     </section>
   </div>
-  <div class="bottom_bar">
-    <div id="left">
+  <footer>
+    <div id="footer_left">
       © 2016 Namų pynės
     <br>
       Svetainė sukurta: EVO MEDIA
     </div>
-    <div id="center">
+    <div id="footer_center">
       Projektą plėtoja:
-      <img src="img/eika.png">
-  </div>
+      <a href="http://www.eika.lt" target="_blank"><img src="img/eika.png"></a>
+  </footer>
 </body>
 </html>

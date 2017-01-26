@@ -10,8 +10,9 @@ html, body {
 
 body {
     background-image: url("img/back.jpg");
-    background-position: center;
-    background-repeat: repeat;
+    /*background-position: center;*/
+    background-size: cover;
+    background-attachment: fixed;
     overflow: hidden;
     margin: 0px; padding: 0px;
 }
@@ -19,70 +20,113 @@ body {
 h1 {
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 1.5em;
 }
 
 p {
   line-height: 1.5em;
+  font-size: 0.95em;
 }
 
 .navigation {
   background-color: rgba(255, 255, 255, 0.9);
   margin-left: 10%;
   /*height: auto;*/
-  padding: 5% 5% 0% 5%;
+  padding: 5% 2% 0% 2%;
   text-align: center;
   position: fixed;
   height: 100%;
   /*z-index: 999;*/
 }
 
- 
-       a {
-            
-            border-radius: 50px;
-            color:white;
-            text-decoration: none;
-            background: #c3b594;
-            display: inline-block;
-            padding: 20px 10px;
-            font-size: 1.2em;
-            text-transform: uppercase;
-       }
-            a:hover {
-                transition: all 0.4s ease;
-                text-decoration: none;
-                background: #b7a78a;
-            }
-       
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  padding-bottom: 2em;
+}
+
+.button {
+  border-radius: 50px;
+  color:white;
+  text-decoration: none;
+  background: #c3b594;
+  display: inline-block;
+  padding: 0.6em 0.4em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  }
+
+.button:hover {
+  transition: all 0.4s ease;
+  background: #b7a78a;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  display: inline-block;
+  padding: 0.5em;
+}
+
+.sign {
+  padding-bottom: 1em;
+}
 
        
 
-.bottom_bar {
+footer {
+  position: absolute;
+  overflow: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  height: 6%;
   background-color: #c3b59b;
+  
+  /*background-color: #c3b59b;
   height: 7%;
   width: 100%;
   position: fixed;
   z-index: 100; 
   bottom: 0; 
   left: 0;
-  margin: auto;
+  margin: auto;*/
 }
 
-#left {
+footer:hover {
+  transition: all 0.4s ease;
+  background: #b7a78a;
+}
+
+#nav_left {
   float: left;
-  padding: 0.5em 0.5em;
+}
+
+#nav_right {
+  float: right;
+}
+
+#footer_left {
+  float: left;
+  padding: 0.4em 0.4em;
   color: white;
   left: 0;
   font-size: 0.8em;
   font-weight: 100;
 }
 
-#center {
+#footer_center {
   float: top;
-  padding-top: 0.5em;
+  padding-top: 0.4em;
   color: white;
   margin-left: 20%;
   font-size: 0.8em;
-  font-weight: 100;
-   
+  font-weight: 100;   
 }
