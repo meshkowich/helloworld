@@ -33,9 +33,19 @@
 
 
 <script type="text/javascript">
-	$(document).ready(function() {
-		$(".fancybox").fancybox();
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '50%',
+		height		: '60%',
+		autoSize	: true,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
 	});
+});
 </script>
 
 
@@ -57,12 +67,12 @@
         <li>
           <img src="img/pin.png" class="sign">
           <br>
-          <a class="button fancybox" rel="group" href="http://files.explosm.net/comics/Rob/addict.png">vieta mieste</a>
+          <a class="button fancybox" rel="group" href="img/wrong.jpg">vieta mieste</a>
         </li>
         <li>
           <img src="img/key.png" class="sign">
           <br>
-          <a class="button fancybox" rel="group" href="img/popup.jpg">noriu būti pirmas</a>
+          <a class="button fancybox" data-fancybox-type="iframe" href="popup.html">noriu būti pirmas</a>
         </li>
       </ul>
     </section>
