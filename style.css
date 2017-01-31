@@ -152,7 +152,7 @@ input {
   margin-bottom: 0em;
 }
 
-/* Hide up and down arrows on number input field. */
+/* Hide up and down arrows on number input field.*/
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
