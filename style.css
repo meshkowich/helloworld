@@ -92,7 +92,7 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 8;
+  height: 8%;
   background-color: #c3b59b;
 }
 
@@ -224,11 +224,11 @@ footer {
 #footer_center {
   float: top right;
   padding-right: 0.4em;
-  font-size: 0.4em; 
+  font-size: 0.6em; 
 }
 
 #footer_left {
-  font-size: 0.4em;
+  font-size: 0.6em;
 }
 
 .sign {
