@@ -41,7 +41,7 @@ p {
   padding: 5% 2% 0% 2%;
   text-align: center;
   position: fixed;
-  height: 92%;
+  height: 94%;
   overflow: auto;
 }
 
@@ -92,7 +92,7 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 8%;
+  height: 6%;
   background-color: #c3b59b;
 }
 
